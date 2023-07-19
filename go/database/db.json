@@ -1,0 +1,96 @@
+{
+    "actors": [
+        {
+            "imdb_id": "nm0000102",
+            "name": "Kevin Bacon"
+        },
+        {
+            "imdb_id": "nm0000158",
+            "name": "Tom Hanks"
+        },
+        {
+            "imdb_id": "nm0000129",
+            "name": "Tom Cruise"
+        },
+        {
+            "imdb_id": "nm0000151",
+            "name": "Morgan Freeman"
+        },
+        {
+            "imdb_id": "nm0000138",
+            "name": "Leonardo DiCaprio"
+        }
+    ],
+    "movies": [
+        {
+            "imdb_id": "tt0112384",
+            "title": "Apollo 13"
+        },
+        {
+            "imdb_id": "tt0104257",
+            "title": "A Few Good Men"
+        },
+        {
+            "imdb_id": "tt0087277",
+            "title": "Footloose"
+        },
+        {
+            "imdb_id": "tt0407887",
+            "title": "The Departed"
+        },
+        {
+            "imdb_id": "tt0120338",
+            "title": "Titanic"
+        },
+        {
+            "imdb_id": "tt1375666",
+            "title": "Inception"
+        },
+        {
+            "imdb_id": "tt0109830",
+            "title": "Forrest Gump"
+        },
+        {
+            "imdb_id": "tt0120815",
+            "title": "Saving Private Ryan"
+        }
+    ],
+    "filmography": [
+	    {
+            "actor": "nm0000102",
+             "movie": "tt0112384"
+        },
+	    {
+            "actor": "nm0000102",
+            "movie": "tt0104257"
+        },
+	    {
+            "actor": "nm0000102",
+            "movie": "tt0087277"
+        },
+	    {
+            "actor": "nm0000138",
+            "movie": "tt0407887"
+        },
+	    {
+            "actor": "nm0000138",
+            "movie": "tt0120338"
+        },
+	    {
+            "actor": "nm0000138",
+            "movie": "tt1375666"
+        },
+	    {
+            "actor": "nm0000158",
+            "movie": "tt0109830"
+        },
+	    {
+            "actor": "nm0000158",
+            "movie": "tt0120815"
+        },
+	    {
+            "actor": "nm0000129",
+            "movie": "tt0104257"
+        }
+    ]
+}
