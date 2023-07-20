@@ -24,5 +24,7 @@ func Start(addr string) error {
 	})
 	e.GET("/actors/:id", h.GetActor)
 	e.GET("/movies/:id", h.GetMovie)
+	e.GET("/movies/:id/actors", h.GetActorsFromMovieId)
+	e.GET("/actors/:id/movies", h.GetMoviesFromActorId)
 	return e.Start(addr)
 }

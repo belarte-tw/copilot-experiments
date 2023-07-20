@@ -73,3 +73,35 @@ func (db *DB) MovieFromId(id string) (Movie, error) {
 
 	return Movie{}, errors.New("movie not found:" + id)
 }
+
+// implement the ActorsIdsFromMovieId function
+// it should return a slice of strings with the ids of the actors
+// and an error if the movie is not found
+// use the db to retrieve the data
+func (db *DB) ActorsIdsFromMovieId(id string) ([]string, error) {
+	if _, err := db.MovieFromId(id); err != nil {
+		return nil, err
+	}
+
+	var actors []string
+	for _, f := range db.Filmography {
+		if f.Movie == id {
+			actors = append(actors, f.Actor)
+		}
+	}
+	return actors, nil
+}
+
+func (db *DB) MoviesIdsFromActorId(id string) ([]string, error) {
+	if _, err := db.ActorFromId(id); err != nil {
+		return nil, err
+	}
+
+	movies := []string{}
+	for _, f := range db.Filmography {
+		if f.Actor == id {
+			movies = append(movies, f.Movie)
+		}
+	}
+	return movies, nil
+}
