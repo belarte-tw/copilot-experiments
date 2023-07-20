@@ -102,3 +102,9 @@ func TestMoviesIdsFromActorId(t *testing.T) {
 		assert.Equal(t, test.movies, movies)
 	}
 }
+
+func TestMoviesIdsFromActorIdNotFound(t *testing.T) {
+	db := database.New()
+	_, err := db.MoviesIdsFromActorId("nm0000000")
+	assert.Error(t, err)
+}
